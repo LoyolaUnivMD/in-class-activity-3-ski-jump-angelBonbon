@@ -1,0 +1,16 @@
+1. Ask the user for the type of jump (either normal or large) and set the variable to jumpType
+2. Ask the user what their speed was at the end of the ramp and set to endSpeed
+3. Initialize dist and points to 0
+4. if jumpType is equal to "normal"
+    a. Set dist equal to endSpeed times sqrt(2*46/9.8)
+    b. Set points to 60 + (dist-90)*2
+5. if jumpType is equal to "large"
+    a. Set dist equal to endSpeed times sqrt(2*70/9.8)
+    b. Set points to 60 + (dist-120)*1.8
+6. Output distance (dist) and points to the user
+7. if points is greater than or equal to 61
+    a. Output "Great job for doing better than par!" to the user
+8. Otherwise if points are less than 10
+    a. Output "What happened" to the user
+9. Otherwise
+    a. Output "Sorry you didn't get very far" to the user
